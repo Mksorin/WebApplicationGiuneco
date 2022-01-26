@@ -1,0 +1,29 @@
+﻿@model LoginAndAuth.Models.UserModel
+
+@{
+    ViewData["Title"] = "LoginSuccess";
+}
+
+<h1>ProcessLogin</h1>
+
+<div>
+    <h4>UserModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.username)
+        </dd>
+    </dl>
+</div>
+<div>    
+    <a asp-action="Index">Torna Indietro</a>
+</div>
